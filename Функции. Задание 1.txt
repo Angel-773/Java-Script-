@@ -1,0 +1,15 @@
+function count(num) {
+var total = num;
+
+function innerCount(nextNum) {
+if (typeof nextNum === 'number' && !isNaN(nextNum)) {
+total += nextNum;
+}
+return innerCount;
+}
+
+return innerCount;
+}
+
+console.log(count(3)(2)(1)(5)(7)); // 18
+console.log(count(3)(null)(1)('asad')()); // 4

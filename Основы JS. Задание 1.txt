@@ -1,0 +1,10 @@
+function checkType(arg) {
+  return typeof arg;
+}
+
+// Пример использования функции
+console.log(checkType("Hello")); // Выводит "string"
+console.log(checkType(42)); // Выводит "number"
+console.log(checkType(true)); // Выводит "boolean"
+console.log(checkType(null)); // Выводит "object"
+console.log(checkType(undefined)); // Выводит "undefined"
